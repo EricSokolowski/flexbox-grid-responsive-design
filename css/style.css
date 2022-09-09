@@ -35,14 +35,13 @@ img{
 }
 
   main {
-    height: 400px;
     width: 250px;
     background-color: white;
     text-align: center;
   }
   #status {
     display: flex;
-    justify-content: flex-end;
+    text-align: right;
     padding: 8px 8px 0 0
 
   }
@@ -93,17 +92,29 @@ img{
   }
   #status {
     text-align: left;
+    padding: 10px 0 0 20px;
   }
   img {
     grid-area: img;
+    margin: 0 auto;
   }
   #brand {
     display: inline;
   }
+  #brand > p {
+    border-left: green 4px solid;
+    padding: 0 20px 0 8px;
+    font-size: 1.6rem;
+  }
   #contact {
     grid-area: contact;
   }
+  #offer {
+    padding: 10px;
+    font-size: 1.4rem;
+  }
   #name, #occupation, #brand, #offer {
     background-color: lightgray;
+    padding-left: 20px;
   }
 }
